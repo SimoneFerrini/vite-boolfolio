@@ -4,7 +4,7 @@ export default {
 
     data() {
         return {
-            imgUrl: 'http://127.0.0.1:8000',
+            imgUrl: 'http://127.0.0.1:8000/',
         }
     },
 
@@ -35,13 +35,13 @@ export default {
 
 <template>
     <div class="card" style="width: 18rem;">
-        <img :src="cover()" class="card-img-top" alt="img">
+        <img :src="cover" class="card-img-top" alt="img">
         <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
-            <p class="card-text">{{ shortContent() }}</p>
-            <small>Type: {{ project.type }}</small>
+            <p class="card-text">{{ shortContent }}</p>
+            <small>Type: {{ project.type ? project.type.title : '-' }}</small>
             <div class="d-flex justify-content-between overflow-x-auto">
-                <span class="badge rounded-pill bg-primary" vfor="tecnology in project.technologies">
+                <span class="badge rounded-pill bg-primary" v-for="technology in project.technologies">
                     {{ technology.name }}
                 </span>
             </div>

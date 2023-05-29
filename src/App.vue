@@ -32,8 +32,11 @@ export default{
 
 <template>
   <h1 class="text-center">I miei progetti: </h1>
-  <div class="text-center w-75 mx-auto">
-    
+  <div class="text-center w-75 mx-auto d-flex justify-content-between row">
+    <div v-for="project in projects" class="col-4 mb-5">
+      <ProjectCard :project="project"></ProjectCard>
+    </div>
+
   </div>
   
 </template>
