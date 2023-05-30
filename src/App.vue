@@ -1,6 +1,6 @@
 <script>
 
-import AppMain from './AppMain.vue';
+//import AppMain from './components/AppMain.vue';
 
 export default{
   name: 'App',
@@ -12,14 +12,14 @@ export default{
   },
 
   components:{
-    AppMain,
+    //AppMain,
   },  
 }
 
 </script>
 
 <template>
-  <AppMain></AppMain>
+  <router-view></router-view>
 </template>
 
 <style scoped lang="scss">
