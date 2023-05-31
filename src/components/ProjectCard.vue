@@ -35,7 +35,9 @@ export default {
 
 <template>
     <div class="card" style="width: 18rem;">
-        <img :src="cover" class="card-img-top" alt="img">
+       <div class="img-container">
+           <img :src="cover" class="card-img-top" alt="img">           
+    </div>
         <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
             <p class="card-text">{{ shortContent }}</p>
@@ -50,4 +52,6 @@ export default {
 </template>
 
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+    
+</style>
