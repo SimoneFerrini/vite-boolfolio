@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import AppHome from './pages/AppHome.vue';
 import AppAboutUs from './pages/AppAboutUs.vue';
 import AppProjectIndex from './pages/AppProjectIndex.vue';
+import SingleProject from './pages/SingleProject.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -23,6 +24,12 @@ const router = createRouter({
             path:'/project-index',
             name:'ProjectIndex',
             component: AppProjectIndex,
+
+        },
+        {
+            path:'/project/:slug',
+            name:'ProjectShow',
+            component: SingleProject,
 
         },
     ]
