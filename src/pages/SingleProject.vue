@@ -8,7 +8,7 @@ export default {
         return {
             project: {},
             projectSlug: '',
-            isLoading: false,
+            isLoading: true,
             projectFound: false,
             imgUrl: 'http://127.0.0.1:8000/',
         }
